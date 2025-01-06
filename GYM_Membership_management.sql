@@ -124,4 +124,8 @@ VALUES (6, 6, 100.00, SYSDATE);
 
 BEGIN
     TrackAttendance(1);
+    TrackAttendance(2);
+    TrackAttendance(3);
+    TrackAttendance(3);
+    DeleteMembership(1);
 END;

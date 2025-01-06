@@ -1,5 +1,6 @@
 # PLSQL-Project-Zensar
-# Avdhoot Wakale [40]
+# **Name**: Avdhoot Deepak Wakale
+  **Contact**: avdhootakale004@gmail.com
 # # Gym membership management system
 
 ## Project Overview
@@ -13,5 +14,5 @@ This project is a gym membership management system built using SQL and PL/SQL. T
 -   **Track Attendance**: Use the Track Attendance app to register specific attendees.
 -   **Manage Membership**: Use the 'Delete Membership' program to delete a member's information.
 -   **Renewal Reminders**: Use the benefits to send renewal reminders. Employee Details
-**Name**: Avdhoot Deepak Wakale
-**Contact**: avdhootakale004@gmail.com
+
+

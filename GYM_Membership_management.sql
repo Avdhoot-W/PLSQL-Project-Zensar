@@ -78,54 +78,30 @@ BEGIN
 END;
 /
 
-
-
 INSERT INTO Members (MemberID, FirstName, LastName, PhoneNumber, Email, PlanID, StartDate, EndDate, FeesPaid)
-VALUES (1, 'John', 'Doe', '123-456-7890', 'john.doe@example.com', 1, SYSDATE, SYSDATE + 30, 'Y');
-
-
-INSERT INTO Members (MemberID, FirstName, LastName, PhoneNumber, Email, PlanID, StartDate, EndDate, FeesPaid)
-VALUES (2, 'Jane', 'Smith', '234-567-8901', 'jane.smith@example.com', 1, SYSDATE, SYSDATE + 30, 'Y');
-
-INSERT INTO Members (MemberID, FirstName, LastName, PhoneNumber, Email, PlanID, StartDate, EndDate, FeesPaid)
-VALUES (3, 'Mike', 'Johnson', '345-678-9012', 'mike.johnson@example.com', 2, SYSDATE, SYSDATE + 60, 'N');
-
-INSERT INTO Members (MemberID, FirstName, LastName, PhoneNumber, Email, PlanID, StartDate, EndDate, FeesPaid)
-VALUES (4, 'Emily', 'Davis', '456-789-0123', 'emily.davis@example.com', 1, SYSDATE, SYSDATE + 30, 'Y');
-
-INSERT INTO Members (MemberID, FirstName, LastName, PhoneNumber, Email, PlanID, StartDate, EndDate, FeesPaid)
-VALUES (5, 'Chris', 'Brown', '567-890-1234', 'chris.brown@example.com', 3, SYSDATE, SYSDATE + 90, 'N');
-
-INSERT INTO Members (MemberID, FirstName, LastName, PhoneNumber, Email, PlanID, StartDate, EndDate, FeesPaid)
-VALUES (6, 'Laura', 'Wilson', '678-901-2345', 'laura.wilson@example.com', 2, SYSDATE, SYSDATE + 60, 'Y');
-
+VALUES (1, 'John', 'Doe', '123-456-7890', 'john.doe@example.com', 1, SYSDATE, SYSDATE + 30, 'Y'),
+       (2, 'Jane', 'Smith', '234-567-8901', 'jane.smith@example.com', 1, SYSDATE, SYSDATE + 30, 'Y'),
+       (3, 'Mike', 'Johnson', '345-678-9012', 'mike.johnson@example.com', 2, SYSDATE, SYSDATE + 60, 'N'),
+       (4, 'Emily', 'Davis', '456-789-0123', 'emily.davis@example.com', 1, SYSDATE, SYSDATE + 30, 'Y'),
+       (5, 'Chris', 'Brown', '567-890-1234', 'chris.brown@example.com', 3, SYSDATE, SYSDATE + 90, 'N'),
+       (6, 'Laura', 'Wilson', '678-901-2345', 'laura.wilson@example.com', 2, SYSDATE, SYSDATE + 60, 'Y');
 
 INSERT INTO Plans (PlanID, PlanName, DurationInDays, Price)
 VALUES (1, 'Monthly Plan', 30, 50.00);
 
-
 INSERT INTO Payments (PaymentID, MemberID, Amount, PaymentDate)
-VALUES (1, 1, 50.00, SYSDATE);
+VALUES (1, 1, 50.00, SYSDATE),
+       (2, 2, 50.00, SYSDATE),
+       (3, 3, 100.00, SYSDATE),
+       (4, 4, 50.00, SYSDATE),
+       (5, 5, 150.00, SYSDATE),
+       (6, 6, 100.00, SYSDATE);
 
-INSERT INTO Payments (PaymentID, MemberID, Amount, PaymentDate)
-VALUES (2, 2, 50.00, SYSDATE);
-
-INSERT INTO Payments (PaymentID, MemberID, Amount, PaymentDate)
-VALUES (3, 3, 100.00, SYSDATE);
-
-INSERT INTO Payments (PaymentID, MemberID, Amount, PaymentDate)
-VALUES (4, 4, 50.00, SYSDATE);
-
-INSERT INTO Payments (PaymentID, MemberID, Amount, PaymentDate)
-VALUES (5, 5, 150.00, SYSDATE);
-
-INSERT INTO Payments (PaymentID, MemberID, Amount, PaymentDate)
-VALUES (6, 6, 100.00, SYSDATE);
 
 BEGIN
     TrackAttendance(1);
     TrackAttendance(2);
     TrackAttendance(3);
     TrackAttendance(3);
-    DeleteMembership(1);
+    --DeleteMembership(1);
 END;

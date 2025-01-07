@@ -1,6 +1,6 @@
 # PLSQL-Project-Zensar
 # **Name**: Avdhoot Deepak Wakale
-  **Contact**: avdhootakale004@gmail.com
+  **Contact**: avdhootwakale004@gmail.com
 # # Gym membership management system
 
 ## Project Overview
